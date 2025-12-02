@@ -20,7 +20,7 @@ const isGeminiEnv = typeof __app_id !== 'undefined';
 const appId = isGeminiEnv ? __app_id : 'my-travel-app';
 const firebaseConfig = isGeminiEnv && typeof __firebase_config !== 'undefined' 
     ? JSON.parse(__firebase_config) 
-    : { /* 🔴 請在此填入您的 Firebase Config */ apiKey: "AIzaSyDmRd_Zeef69qwEJH8kR8MZ0O3J4mftMwo",
+    : {  apiKey: "AIzaSyDmRd_Zeef69qwEJH8kR8MZ0O3J4mftMwo",
     authDomain: "smarttravel-1cc01.firebaseapp.com",
     projectId: "smarttravel-1cc01",
     storageBucket: "smarttravel-1cc01.firebasestorage.app",
