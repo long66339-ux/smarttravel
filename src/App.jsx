@@ -28,7 +28,8 @@ const firebaseConfig = isGeminiEnv && typeof __firebase_config !== 'undefined'
     appId: "1:575049200842:web:693c26a0b1d2f1b7357033",
     measurementId: "G-WJJ70DQ9RX" }; 
 
-const apiKey = "AIzaSyDQZzNOlmdXyg-mVSBr2Bu3yOP1tc-Yvdk"; // API Key (在此環境由系統提供，若獨立部署請填入您的 Key)
+// ✅ 正確寫法 (Vite)
+const apiKey = import.meta.env.VITE_API_KEY; // API Key (在此環境由系統提供，若獨立部署請填入您的 Key)
 
 // --------------------------------------------------------------------------------
 // Helper Functions
